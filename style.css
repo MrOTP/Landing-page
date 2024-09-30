@@ -1,0 +1,265 @@
+/* Properties */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Contents */
+
+.illusion {
+    min-width: 300px;
+    max-width: 300px;
+    /* border: solid rgba(100, 172, 255, 0.8); */
+    /* color: rgba(100, 172, 255, 0.8); */
+}
+
+.header {
+    background-color: rgb(37, 49, 66);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+    .header-links {
+        display: flex;
+        gap: 18px;
+    }
+
+        .header-links a:hover {
+            color: #3882f6;
+        }
+
+    li a {
+        color: #E5E7EB;
+        font-size: 18px;
+    }
+
+    .logo {
+        flex: 1;
+        color: #F9FAF8;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+#container-1 {
+    background: #1F2937;
+    min-height: 300px;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    padding: 10px;
+}
+
+    .hero {
+        flex: 1;
+        display: flex;
+        height: 300px;
+    }
+
+        .content-hero {
+            flex: 1;
+        }
+
+            .text-hero-1 {
+                font-size: 48px;
+                font-weight: bolder;
+                color: #F9FAF8;
+                width: 450px;
+            }
+
+            .text-hero-2 {
+                font-size: 18px;
+                color: #E5E7EB;
+                width: 480px;
+                margin-bottom: 10px;
+            }
+
+            .content-hero button {
+                /*  Reminder: This gets rid of the button's default properties  */
+                border: none;
+                padding: 0;
+                margin: 0;
+                box-shadow: none;
+                outline: none;
+                
+                background-color: #3882f6;
+                color: #F9FAF8;
+                padding: 5px 20px;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+        .placeholder {
+            background-color: #e5e7eb77;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+            .placeholder img {
+                flex: 1;
+                width: 300px;
+                height: 300px;
+            }
+
+            /* .text-placeholder {
+                color: white;
+            } */
+        
+#container-2 {
+background-color: white;
+height: 550px;
+display: flex;
+}
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+        .text-information {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bolder;
+            color: #1F2937;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        } 
+            .picture {
+                text-align: center;
+                max-width: 200px;
+            }
+
+                .picture img {
+                    border: solid #3882f6;
+                    border-radius: 10%;
+                    width: 200px;
+                    height: 200px;
+                }
+
+#container-3 {
+    background-color: #e5e7eb;
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+    .quote {
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        gap: 10px;
+    }
+        .text-quote {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: italic;
+            color: #1f2937;
+        }
+
+        .text-author {
+            align-self: flex-end;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 35px;
+}
+
+#container-4 {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+    .cta {
+        height: 150px;
+        flex: 1;
+        background-color: #3882f6;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 400px;
+    }
+
+
+        .content-cta {
+            /* ignore this rule its only here to make it look like I know what I'm doing */
+            gap: 0;
+        }
+
+            .text-cta-1 {
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            .text-cta-2 {
+                color: #E5E7EB;
+            }
+                
+        .button-cta {
+            border: solid #F9FAF8;
+            border-radius: 10px;
+            border: solid;
+        }
+
+            .button-cta button {
+                /*  Yes again, this gets rid of the button's default properties  */
+                border: none;
+                padding: 0;
+                /* margin: 0; */
+                box-shadow: none;
+                outline: none;
+
+                background-color: #3882f6;
+                color: #F9FAF8;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 5px 20px;
+                text-align: center;
+                border-radius: 10px;
+                
+            }
